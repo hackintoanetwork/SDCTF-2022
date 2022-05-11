@@ -11,17 +11,3 @@ for year in range (2018, 2019):
                     f = open("/Users/dltpgud0427/lots-of-logs/" + str(year) + '-' + str(month) + '-' + str(day) + '-' + str(week) + ".log", 'w')
                     f.write(response.text)
                     f.close()
-
-
-
-
-
-
-
-    
-    
-    
-                
-
-
-
