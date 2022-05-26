@@ -8,5 +8,5 @@
 Writeups for the San Diego CTF 2022 Web</br>
 
 This is a solution to the SDCTF 2022 web problem that I wrote with my poor writing skills.</br>
-You can also see web problem solving on my blog, https://hackintoanetwork.com!!</br>
+You can also see web problem solving on my blog, https://hackintoanetwork.com :D </br>
 
