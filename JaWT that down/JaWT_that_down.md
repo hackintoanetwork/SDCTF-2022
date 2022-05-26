@@ -1,4 +1,4 @@
-<img src=“”https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcdpEaM%2FbtrBGNxzMZC%2FmppNaMeVju817KI9SZ1Pp1%2Fimg.png” width=“500” height=“500” />
+<img src=“https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcdpEaM%2FbtrBGNxzMZC%2FmppNaMeVju817KI9SZ1Pp1%2Fimg.png” width=“500” height=“500” />
 
 
 문제에 들어가면 위와 같은 페이지가 나온다.</br>
