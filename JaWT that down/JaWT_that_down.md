@@ -37,13 +37,13 @@ Token 값은 아주 길었다.
 
 ---
 
-`
+```
 eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.
 
 eyJ1c2VybmFtZSI6IkF6dXJlRGlhbW9uZCIsInRva2VuIjoiNTU3NjJmMjAyYjIzMjI2NDQ0Y2E0Zjk5ZTczMjdiNTkiLCJpYXQiOjE2NTIxNDg1NDksImV4cCI6MTY1MjE0ODU1MX0.
 
 K3A_hVp5cMbVmaGTvohdC3KNFnOhfePoH3N-7mS034Q
-`
+```
 
 긴 Token 값을 [.] 기준으로 아래와 같이 세 문단으로 나누어 보았다.</br>
 
@@ -59,13 +59,13 @@ K3A_hVp5cMbVmaGTvohdC3KNFnOhfePoH3N-7mS034Q
 하지만 세번째 문단은 디코딩이 되지 않았다.</br>
 
 ---
-`
+```
 {"alg":"HS256","typ":"JWT"}.  
 
  {"username":"AzureDiamond","token":"55762f202b23226444ca4f99e7327b59","iat":1652148549,"exp":165214855MX0.
 
 K3A_hVp5cMbVmaGTvohdC3KNFnOhfePoH3N-7mS034Q
-`
+```
 
 디코딩 된 최종 값은 위와 같다.</br>
 첫번째 문단이 디코딩 된 값에 "JWT" 라 적혀 있어 구글에 검색해 보았고 JSON 웹 토큰이라는 것을 알 수 있었다.</br>
