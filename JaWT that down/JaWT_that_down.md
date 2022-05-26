@@ -68,6 +68,7 @@ And I tried decoding it because it seemed to be encoded in Base64.</br>
 
 첫번째 문단과 두번째 문단은 디코딩이 되었다.</br>
 The first paragraph and the second paragraph were decoded.</br>
+
 하지만 세번째 문단은 디코딩이 되지 않았다.</br>
 However, the third paragraph was not decoded.</br>
 
