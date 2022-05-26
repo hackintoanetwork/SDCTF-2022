@@ -86,16 +86,19 @@ jwt.io에선 JWT 웹 토큰 구조를 더 잘 파악할 수 있다.</br>
 토큰의 Payload 분석 결과 토큰 만료 시간이 2초임을 확인 할 수 있었다.</br>
 
 ---
-<img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcSiiT8%2FbtrBFYskEdZ%2Fr9x8YrhpJOu9jnG2M2Eluk%2Fimg.png" width="600" height="200"/>
 
 앞에서 Flag 버튼을 눌렀지만 "Inavalid Token: Access Denied"라는 문구가 뜬 것은 토큰이 만료되었기 때문이다.</br>
 로그인 후 토큰이 만료되기 전에 Flag 버튼을 눌러 들어가야 한다.</br>
+
+<img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcSiiT8%2FbtrBFYskEdZ%2Fr9x8YrhpJOu9jnG2M2Eluk%2Fimg.png" width="600" height="200"/>
+
+토큰이 만료 되기 전 재빠르게 Flag 버튼을 눌러 들어갔고 "d"라는 문자가 출력된 것을 보았다.</br>
 
 ---
 
 <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fo1Cgm%2FbtrBF5yMWaS%2F4KzjoaFJrOzmBZW3OGXkx1%2Fimg.png" width="600" height="200"/>
 
-토큰이 만료 되기 전 재빠르게 Flag 버튼을 눌러 들어갔고 "d"라는 문자가 출력된 것을 보았다.</br>
+
 그런 다음 https://jawt.sdc.tf/s/d 로 들어갔다. 그랬더니 "c"라는 문자가 출력된 것을 볼 수 있었다.</br>
 이를 보고 디렉터리 안에 계속 디렉터리가 있다는 것을 눈치채게 되었다.</br>
 
