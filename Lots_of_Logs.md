@@ -33,7 +33,7 @@ for year in range (2018, 2019):
                     f = open("/Users/dltpgud0427/lots-of-logs/" + str(year) + '-' + str(month) + '-' + str(day) + '-' + str(week) + ".log", 'w')
                     f.write(response.text)
                     f.close()
-```
+``` </br>
 
 ![](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FQFPOD%2FbtrBQDf7JOT%2FerS9wpakmDUAUKA31yKvDk%2Fimg.png)
 2018년도 로그들을 수집하던 중 2018년 6월에 3일 동안 로그가 끊겨 있는 것을 발견하였고 그 다음 날인 2018년 6월 13일 로깅 서버를 악용하여 3일 동안의 로그를 삭제하는 사람을 캡처한 로그가 있었다.<br/>
