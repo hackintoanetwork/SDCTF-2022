@@ -10,7 +10,7 @@
 
 ---
 
-<img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FQd2v2%2FbtrBHpo68aS%2FSJhMlYBLbkHzkcwj2TvAx0%2Fimg.png" width="800" height="500"/>
+<img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FQd2v2%2FbtrBHpo68aS%2FSJhMlYBLbkHzkcwj2TvAx0%2Fimg.png" width="800" height="400"/>
 아이디 비밀번호는 페이지 소스에서 주석으로 알려주고 있었다.</br>
 ID : AzureDiamond</br>
 PW : hunter2</br>
@@ -23,7 +23,7 @@ PW : hunter2</br>
 
 ---
 
-<img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FkLJmj%2FbtrB67I2Liy%2FkRb9cvVbi9LliChQY3IJo1%2Fimg.png" width="800" height="500"/>
+<img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FkLJmj%2FbtrB67I2Liy%2FkRb9cvVbi9LliChQY3IJo1%2Fimg.png" width="800" height="200"/>
 
 Flag 버튼을 눌렀더니 "Inavalid Token: Access Denied" 라는 문구만 나오고 Flag는 나오지 않았다.</br>
 
@@ -32,7 +32,7 @@ Flag 버튼을 눌렀더니 "Inavalid Token: Access Denied" 라는 문구만 나
 "Inavalid Token: Access Denied" 문구를 통해서 Token을 활용해 푸는 문제라는 걸 대략 짐작할 수 있었고
 바로 EditThisCookie로 Token 값을 확인해보았다.</br>
 
-<img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FdlKh6f%2FbtrBHU34C3p%2Fitm4rEAGc8nZB0jw4qF0vk%2Fimg.png" width="800" height="500"/>
+<img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FdlKh6f%2FbtrBHU34C3p%2Fitm4rEAGc8nZB0jw4qF0vk%2Fimg.png" width="700" height="500"/>
 
 Token 값은 아주 길었다.
 
@@ -50,11 +50,11 @@ K3A_hVp5cMbVmaGTvohdC3KNFnOhfePoH3N-7mS034Q
 
 ---
 
-<img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbmRNhe%2FbtrBF4mjxNK%2FNQ1N6ZMWB3Lf4NSgJANhhk%2Fimg.png" width="800" height="500"/>
+<img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbmRNhe%2FbtrBF4mjxNK%2FNQ1N6ZMWB3Lf4NSgJANhhk%2Fimg.png" width="800" height="400"/>
 
 그리고 Base64로 인코딩 되어 있는 것 같아 디코딩도 시도해보았다.</br>
 
-<img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FnlWKC%2FbtrBHVBTgZw%2FQJPp7geYiJf4dhLJxsOpbk%2Fimg.png" width="800" height="500"/>
+<img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FnlWKC%2FbtrBHVBTgZw%2FQJPp7geYiJf4dhLJxsOpbk%2Fimg.png" width="800" height="400"/>
 
 첫번째 문단과 두번째 문단은 디코딩이 되었다.</br>
 하지만 세번째 문단은 디코딩이 되지 않았다.</br>
@@ -79,21 +79,21 @@ jwt.io에선 JWT 웹 토큰 구조를 더 잘 파악할 수 있다.</br>
 
 ---
 
-<img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbwOAi3%2FbtrBHquQMuL%2Fv1llmBMACDMzN9cV9HNmJ0%2Fimg.png" width="800" height="500"/>
+<img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbwOAi3%2FbtrBHquQMuL%2Fv1llmBMACDMzN9cV9HNmJ0%2Fimg.png" width="800" height="300"/>
 
-<img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbYdsrI%2FbtrBFHrmbXy%2F1CqkB5CrS2K1L8oycSHePk%2Fimg.png" width="800" height="500"/>
+<img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbYdsrI%2FbtrBFHrmbXy%2F1CqkB5CrS2K1L8oycSHePk%2Fimg.png" width="800" height="300"/>
 
 토큰의 Payload 분석 결과 토큰 만료 시간이 2초임을 확인 할 수 있었다.</br>
 
 ---
-<img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcSiiT8%2FbtrBFYskEdZ%2Fr9x8YrhpJOu9jnG2M2Eluk%2Fimg.png" width="800" height="500"/>
+<img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcSiiT8%2FbtrBFYskEdZ%2Fr9x8YrhpJOu9jnG2M2Eluk%2Fimg.png" width="800" height="200"/>
 
 앞에서 Flag 버튼을 눌렀지만 "Inavalid Token: Access Denied"라는 문구가 뜬 것은 토큰이 만료되었기 때문이다.</br>
 로그인 후 토큰이 만료되기 전에 Flag 버튼을 눌러 들어가야 한다.</br>
 
 ---
 
-<img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fo1Cgm%2FbtrBF5yMWaS%2F4KzjoaFJrOzmBZW3OGXkx1%2Fimg.png" width="800" height="500"/>
+<img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fo1Cgm%2FbtrBF5yMWaS%2F4KzjoaFJrOzmBZW3OGXkx1%2Fimg.png" width="800" height="200"/>
 
 토큰이 만료 되기 전 재빠르게 Flag 버튼을 눌러 들어갔고 "d"라는 문자가 출력된 것을 보았다.</br>
 그런 다음 https://jawt.sdc.tf/s/d 로 들어갔다. 그랬더니 "c"라는 문자가 출력된 것을 볼 수 있었다.</br>
