@@ -4,18 +4,18 @@
 ---
 
 ![](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FLPoWZ%2FbtrBMaTvHrU%2FYDRmojUZwoF35xcO2qjZ9k%2Fimg.png)
-페이지를 내리면 View raw log 버튼을 볼 수 있다.<br/>
+페이지를 내리다 보면 View raw log 버튼을 볼 수 있다.<br/>
 
 ---
 
 ![](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbYL9kN%2FbtrBNdip2Eg%2FqC8t9P2wZgQFUkL2Xk037K%2Fimg.png)
-버튼을 눌러 들어가면 위와 같이 로그 파일들이 나온다.<br/>
+버튼을 눌러 들어가보았고 위와 같이 로그 기록들이 나왔다.<br/>
 
 ---
 
 ![](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FCecKE%2FbtrBLUKdb3S%2Fm6ORr4HxWkl58TztkTue21%2Fimg.png)
 날짜를 바꿔 2022년 3월 8일 화요일로도 들어가보았다.<br/>
-2022년 3월 8일 화요일도 마찬가지로 로그가 쌓여 있는 것을 확인할 수 있다.<br/>
+2022년 3월 8일 화요일도 마찬가지로 로그가 쌓여 있는 것을 확인할 수 있었다.<br/>
 로그는 YYYY/MM/DD/DAY.log 형식의 경로에서 호스팅되고 있다.</br>
 
 ---
